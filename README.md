@@ -1,18 +1,15 @@
 # Panda3D-Raspbian
-Version of Raspbian compiled for Raspbian Stretch
+Version of Panda3D compiled for Raspbian Buster
 
 Steps used to compile:
 
-Installed all dependencies: 
+Installed all dependencies, then started compile script: 
 
 sudo apt update
 sudo apt-get install libvorbis-dev libeigen3-dev libopenal-dev libode-dev libbullet-dev  libgtk2.0-dev libassimp-dev libopenexr-dev -y
 sudo apt-get install  libxrandr-dev libxxf86dga-dev libxcursor-dev bison flex libfreetype6-dev-y
 sudo apt-get install build-essential pkg-config fakeroot python-dev libpng-dev libjpeg-dev libtiff-dev zlib1g-dev libssl-dev libx11-dev -y  sudo apt install libgl1-mesa-dev libxrandr-dev libxxf86dga-dev libxcursor-dev bison flex libfreetype6-dev -y
-
 git clone https://github.com/panda3d/panda3d.git && cd panda3d
-
-
 python makepanda/makepanda.py --everything --installer --no-egl --no-gles --no-gles2 --no-opencv
 
 
